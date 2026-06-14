@@ -1,0 +1,71 @@
+
+-- Power BI DAX Measures
+
+Avg Adherence =
+AVERAGE(ckd_clean[treatment_adherence_pct])
+
+Avg Diagnosis Delay =
+FORMAT(AVERAGE(ckd_clean[time_to_diagnosis_days]), "0.00") & " days"
+
+Avg Diagnosis Delay1 =
+AVERAGE(ckd_clean[time_to_diagnosis_days])
+
+Avg QoL Score =
+AVERAGE(ckd_clean[quality_of_life_score])
+
+Avg Wait Time (hrs) =
+FORMAT(AVERAGE(ckd_clean[avg_wait_time_hours]), "0.00 \h\r\s")
+
+Avg Wait Time (hrs)1 =
+AVERAGE(ckd_clean[avg_wait_time_hours])
+
+Complication Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[complication_developed] = "Yes"),
+    COUNTROWS(ckd_clean)
+)
+
+Deterioration Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[Primary Outcome] = "Deteriorated"),
+    COUNTROWS(ckd_clean)
+) * 100
+
+Early Detection % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[disease_stage_at_diagnosis] = "Early"),
+    COUNTROWS(ckd_clean)
+)
+
+Mortality Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[Primary Outcome] = "Deceased"),
+    COUNTROWS(ckd_clean)
+)
+
+Readmission Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[hospital_readmission] = "Yes"),
+    COUNTROWS(ckd_clean)
+)
+
+Recovery Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[Primary Outcome] = "Recovered"),
+    COUNTROWS(ckd_clean)
+)
+
+Severe Stage % =
+DIVIDE(
+    CALCULATE(COUNTROWS(ckd_clean), ckd_clean[disease_stage_at_diagnosis] = "Severe"),
+    COUNTROWS(ckd_clean)
+)
+
+Total Patients =
+COUNTROWS(ckd_clean)
+
+Uninsured Mortality Rate % =
+CALCULATE(
+    [Mortality Rate %],
+    ckd_clean[insurance_status] = "Uninsured"
+)
