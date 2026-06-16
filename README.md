@@ -12,7 +12,7 @@
 
 ![Data Overview](assets/Data_Overview.png)
 
-This project analyses 100,000 synthetic Chronic Kidney Disease (CKD) patient records from healthcare facilities across Nigeria, India, Brazil, Kenya, and the United States.
+Chronic Kidney Disease (CKD) is a long-term condition that can lead to kidney failure if not detected and managed early, making timely diagnosis and treatment adherence important factors in patient outcomes. This project analyses 100,000 synthetic Chronic Kidney Disease (CKD) patient records from healthcare facilities across Nigeria, India, Brazil, Kenya, and the United States.
 
 The objective was to identify factors associated with patient outcomes, treatment adherence, diagnosis delays, and healthcare access using MySQL and Power BI.
 
@@ -20,7 +20,7 @@ The objective was to identify factors associated with patient outcomes, treatmen
 
 ---
 
-## Dataset
+## Dataset Overview
 
 | Attribute | Detail |
 |---|---|
@@ -110,7 +110,7 @@ Each page includes interactive slicers for Country, Sex, and Stage at Diagnosis.
 
 | Diagnosis Delay | Treatment Adherence |
 |---|---|
-| ![Patient Access Analysis](assets/Patient_Access_Analysis.png) | ![Adherance Analysis](assets/Adherance_Analysis.png) |
+| ![Patient Access Analysis](assets/Patient_Access_Analysis.png) | ![Adherence Analysis](assets/Adherence_Analysis.png) |
 
 ---
 
@@ -144,6 +144,10 @@ Requirements: MySQL 8.0+, MySQL ODBC Connector, Power BI Desktop
 ```bash
 git clone https://github.com/Akomayemichael/ckd-patient-outcomes-analysis.git
 ```
+1. Run sql/CKD_Phase1_Data_Cleaning1.sql in MySQL Workbench — update the LOAD DATA INFILE path to your local CSV location
+2. Run sql/CKD_Phase2_Exploratory_Data_Analysis.sql
+3. Open dashboard/CKD_Analysis_Dashboard.pbix in Power BI Desktop
+4. Go to Transform Data → Data Source Settings, update the connection to localhost / ckd_analysis, then click Refresh
 ---
 
 ## Author
@@ -152,7 +156,7 @@ git clone https://github.com/Akomayemichael/ckd-patient-outcomes-analysis.git
 
 Data Analyst | Business Intelligence Analyst
 
-- LinkedIn: https://www.linkedin.com/in/michael-akomaye-4381082ba/
+- LinkedIn: [Michael Akomaye] https://www.linkedin.com/in/michael-akomaye-4381082ba/
 - Email: michaelwilliams4232016@gmail.com
 ---
 *If you found this project useful, feel free to ⭐ star the repository!*
