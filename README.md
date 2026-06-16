@@ -63,7 +63,7 @@ Data cleaning included:
 - Validating diagnosis dates against calculated date differences
 - Creating 6 Power BI reporting views
 
-Full cleaning process: `sql/CKD_Phase1_Data_Cleaning.sql`
+Full cleaning process: [sql/CKD_Phase1_Data_Cleaning1.sql](sql/CKD_Phase1_Data_Cleaning1.sql)
 
 ---
 
@@ -99,11 +99,15 @@ Each page includes interactive slicers for Country, Sex, and Stage at Diagnosis.
 
 | Executive Overview | Healthcare Equity |
 |---|---|
-| ![P1](assets/dashboard_preview_p1.png) | ![P3](assets/dashboard_preview_p3.png) |
+| ![Data Overview](assets/Data_Overview.png) | ![Equity Analysis](assets/Equity_Analysis.png) |
+
+| Clinical Factors | Disease Stage |
+|---|---|
+| ![Clinical Analysis](assets/Clinical_Analysis.png) | ![Detection Analysis](assets/Detection_Analysis.png) |
 
 | Diagnosis Delay | Treatment Adherence |
 |---|---|
-| ![P4](assets/dashboard_preview_p4.png) | ![P5](assets/dashboard_preview_p5.png) |
+| ![Patient Access Analysis](assets/Patient_Access_Analysis.png) | ![Adherance Analysis](assets/Adherance_Analysis.png) |
 
 ---
 
