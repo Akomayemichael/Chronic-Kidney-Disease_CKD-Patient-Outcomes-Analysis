@@ -8,7 +8,9 @@
 
 ---
 
-## Project Overview
+## Overview
+
+![Data Overview](assets/Data_Overview.png)
 
 This project analyses 100,000 synthetic Chronic Kidney Disease (CKD) patient records from healthcare facilities across Nigeria, India, Brazil, Kenya, and the United States.
 
@@ -25,7 +27,7 @@ The objective was to identify factors associated with patient outcomes, treatmen
 | Records | 100,000 patients |
 | Countries | Nigeria, India, Brazil, Kenya, USA |
 | Period | 2019 – 2025 |
-| Columns | 38 original, 8 engineered |
+| Columns | 46 total (38 original + 8 engineered) |
 | Key Variables | Disease stage, treatment type, insurance status, income, facility tier, drug availability, treatment adherence, patient outcomes |
 
 ---
@@ -47,8 +49,9 @@ The objective was to identify factors associated with patient outcomes, treatmen
 | MySQL 8.0 | Data cleaning, feature engineering, exploratory analysis |
 | Power BI Desktop | Interactive dashboard and reporting |
 | MySQL ODBC Connector | Live connection between MySQL and Power BI |
-| ClaudeAi, Chatgpt | Dataset generation, SQL and DAX code generation |
 | GitHub | Version control and project documentation |
+
+> AI tools (Claude, ChatGPT) were used to assist with dataset generation and code review.
 
 ---
 
@@ -145,10 +148,11 @@ git clone https://github.com/Akomayemichael/ckd-patient-outcomes-analysis.git
 
 ## Author
 
-**Adie Michael Akomaye:**
-Microsoft Data|Business Analyst
+**Adie Michael Akomaye**
 
-- LinkedIn: (https://www.linkedin.com/in/michael-akomaye-4381082ba/)
+Data Analyst | Business Intelligence Analyst
+
+- LinkedIn: https://www.linkedin.com/in/michael-akomaye-4381082ba/
 - Email: michaelwilliams4232016@gmail.com
 ---
 *If you found this project useful, feel free to ⭐ star the repository!*
