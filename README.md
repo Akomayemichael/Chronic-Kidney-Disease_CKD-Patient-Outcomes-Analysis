@@ -8,7 +8,7 @@
 
 ---
 
-## Overview
+## Project Overview
 
 This project analyses 100,000 synthetic Chronic Kidney Disease (CKD) patient records from healthcare facilities across Nigeria, India, Brazil, Kenya, and the United States.
 
@@ -47,7 +47,7 @@ The objective was to identify factors associated with patient outcomes, treatmen
 | MySQL 8.0 | Data cleaning, feature engineering, exploratory analysis |
 | Power BI Desktop | Interactive dashboard and reporting |
 | MySQL ODBC Connector | Live connection between MySQL and Power BI |
-| PowerPoint | Executive presentation |
+| ClaudeAi, Chatgpt | Dataset generation, SQL and DAX code generation |
 | GitHub | Version control and project documentation |
 
 ---
@@ -78,7 +78,7 @@ Techniques used:
 - Subqueries and joins
 - Views for Power BI integration
 
-Full analysis: ``
+Full analysis: [sql/CKD_Phase2_Exploratory_Data_Analysis.sql](sql/CKD_Phase2_Exploratory_Data_Analysis.sql)
 
 ---
 
@@ -139,20 +139,14 @@ Each page includes interactive slicers for Country, Sex, and Stage at Diagnosis.
 Requirements: MySQL 8.0+, MySQL ODBC Connector, Power BI Desktop
 
 ```bash
-git clone https://github.com/[your-username]/ckd-patient-outcomes-analysis.git
+git clone https://github.com/Akomayemichael/ckd-patient-outcomes-analysis.git
 ```
-
-1. Run `sql/CKD_Phase1_Data_Cleaning.sql` in MySQL Workbench — update the file path in `LOAD DATA INFILE` to your local CSV location before running
-2. Run `sql/CKD_Phase2_EDA.sql`
-3. Open `dashboard/CKD_Analysis_Dashboard.pbix` in Power BI Desktop
-4. Go to **Transform Data → Data Source Settings**, update the connection to `localhost` / `ckd_analysis`, enter your credentials and click Refresh
-
 ---
 
 ## Author
 
 **Adie Michael Akomaye:**
-Microsoft Certified Data Analyst
+Microsoft Data|Business Analyst
 
 - LinkedIn: (https://www.linkedin.com/in/michael-akomaye-4381082ba/)
 - Email: michaelwilliams4232016@gmail.com
